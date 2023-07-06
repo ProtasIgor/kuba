@@ -1,0 +1,33 @@
+@mixin title {
+    margin: 0 auto 22px;
+
+    text-align: center;
+    font-size: 2em;
+    line-height: 2.4em;
+    color: $color-title;
+}
+
+@mixin text {
+    text-align: justify;
+    text-align-last: left;
+    font-size: 1em;
+    line-height: 1.75;
+    color: $color-text;
+}
+
+@mixin inner {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+@mixin section-line {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1170px;
+    height: 1px;
+    background-color: #D0D4D8;
+}

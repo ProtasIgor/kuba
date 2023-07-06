@@ -1,0 +1,107 @@
+.footer {
+    padding: 56px 0 32px;
+
+    &__inner {
+        @include inner;
+    }
+
+    &__list {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: .9em;
+        line-height: 1.25;
+        color: $color-title;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        align-self: flex-start;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        line-height: 1.25;
+        color: $color-text;
+        transition: opacity .3s;
+    }
+
+    &__link:hover {
+        opacity: .7;
+        transition: opacity .3s;
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &__link-svg {
+        margin-right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: $fill-contact-svg;
+        vertical-align: middle;
+    }
+
+    &__link-svg:hover {
+        fill: #505050;
+    }
+
+    &__description {
+        margin: 0 auto;
+        width: max-content;
+        display: block;
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: .8em;
+        line-height: 1.1875;
+    }
+}
+
+@media (max-width: 740px) {
+    .footer {
+        &__list {
+            min-height: 350px;
+            margin: 0 auto 40px;
+            max-width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        &__item {
+            flex-basis: 50%;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .footer {
+        &__list {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-items: center;
+            gap: 25px;
+        }
+
+        &__item {
+            max-width: 100%;
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}

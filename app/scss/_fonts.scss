@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Georgia';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Georgia'),
+        url('../fonts/georgia.woff2') format('woff2'),
+        url('../fonts/georgia.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Georgia-Bold';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: local('Georgia-Bold'),
+        url('../fonts/Georgia-Bold.woff2') format('woff2'),
+        url('../fonts/Georgia-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Lato-Regular'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: local('Lato-Bold'),
+        url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
+}

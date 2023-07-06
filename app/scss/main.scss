@@ -1,0 +1,25 @@
+@import '_fonts.scss';
+@import '_vars.scss';
+@import '_mixins.scss';
+@import '_reset.scss';
+
+@import 'slick.scss';
+@import 'components/_header.scss';
+@import 'components/_advantage.scss';
+@import 'components/_about.scss';
+@import 'components/_photo.scss';
+@import 'components/_footer.scss';
+
+body {
+    /* margin: 0 auto;
+    max-width: 1440px; */
+
+    font-family: 'Georgia', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
